@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D7693F32EC57F2F00B15B87 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7693F22EC57F2F00B15B87 /* Swinject */; };
+		9D7695322EC7D21600B15B87 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7695312EC7D21600B15B87 /* Swinject */; };
+		9D7695342EC7D22400B15B87 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7695332EC7D22400B15B87 /* Swinject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D76926B2EC5660000B15B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D76924D2EC565FE00B15B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7692542EC565FE00B15B87;
+			remoteInfo = Prueba_MarioGR;
+		};
+		9D7692752EC5660100B15B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D76924D2EC565FE00B15B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7692542EC565FE00B15B87;
+			remoteInfo = Prueba_MarioGR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D7692552EC565FE00B15B87 /* Prueba_MarioGR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prueba_MarioGR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D76926A2EC5660000B15B87 /* Prueba_MarioGRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prueba_MarioGRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7692742EC5660100B15B87 /* Prueba_MarioGRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prueba_MarioGRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9D7694CC2EC6D49B00B15B87 /* Exceptions for "Prueba_MarioGR" folder in "Prueba_MarioGR" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9D7692542EC565FE00B15B87 /* Prueba_MarioGR */;
+		};
+		9D7694D02EC6DFA000B15B87 /* Exceptions for "Prueba_MarioGRTests" folder in "Prueba_MarioGR" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Detail/Mocks/MockGetCharacterDetailUseCase.swift,
+				Favorites/Mocks/CoreDataTestStack.swift,
+				Favorites/Mocks/FavoritesRepositoryMock.swift,
+				Favorites/Mocks/MockBiometricAuthService.swift,
+				Favorites/Mocks/MockFavoritesPersistanceRepository.swift,
+				Favorites/Mocks/MockFavoritesRepository.swift,
+				Favorites/Mocks/MockGetFavoritesUseCase.swift,
+			);
+			target = 9D7692542EC565FE00B15B87 /* Prueba_MarioGR */;
+		};
+		9D7694D12EC6DFA000B15B87 /* Exceptions for "Prueba_MarioGRTests" folder in "Prueba_MarioGRTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Detail/Mocks/MockGetCharacterDetailUseCase.swift,
+				Favorites/Mocks/CoreDataTestStack.swift,
+				Favorites/Mocks/FavoritesRepositoryMock.swift,
+				Favorites/Mocks/MockBiometricAuthService.swift,
+				Favorites/Mocks/MockFavoritesPersistanceRepository.swift,
+				Favorites/Mocks/MockFavoritesRepository.swift,
+				Favorites/Mocks/MockGetFavoritesUseCase.swift,
+			);
+			target = 9D7692692EC5660000B15B87 /* Prueba_MarioGRTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9D7692572EC565FE00B15B87 /* Prueba_MarioGR */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9D7694CC2EC6D49B00B15B87 /* Exceptions for "Prueba_MarioGR" folder in "Prueba_MarioGR" target */,
+			);
+			path = Prueba_MarioGR;
+			sourceTree = "<group>";
+		};
+		9D76926D2EC5660000B15B87 /* Prueba_MarioGRTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9D7694D02EC6DFA000B15B87 /* Exceptions for "Prueba_MarioGRTests" folder in "Prueba_MarioGR" target */,
+				9D7694D12EC6DFA000B15B87 /* Exceptions for "Prueba_MarioGRTests" folder in "Prueba_MarioGRTests" target */,
+			);
+			path = Prueba_MarioGRTests;
+			sourceTree = "<group>";
+		};
+		9D7692772EC5660100B15B87 /* Prueba_MarioGRUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Prueba_MarioGRUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D7692522EC565FE00B15B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7693F32EC57F2F00B15B87 /* Swinject in Frameworks */,
+				9D7695322EC7D21600B15B87 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7692672EC5660000B15B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7692712EC5660100B15B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7695342EC7D22400B15B87 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D76924C2EC565FE00B15B87 = {
+			isa = PBXGroup;
+			children = (
+				9D7692572EC565FE00B15B87 /* Prueba_MarioGR */,
+				9D76926D2EC5660000B15B87 /* Prueba_MarioGRTests */,
+				9D7692772EC5660100B15B87 /* Prueba_MarioGRUITests */,
+				9D7692562EC565FE00B15B87 /* Products */,
+				F6470D2D364592A0937837BC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9D7692562EC565FE00B15B87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D7692552EC565FE00B15B87 /* Prueba_MarioGR.app */,
+				9D76926A2EC5660000B15B87 /* Prueba_MarioGRTests.xctest */,
+				9D7692742EC5660100B15B87 /* Prueba_MarioGRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6470D2D364592A0937837BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D7692542EC565FE00B15B87 /* Prueba_MarioGR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D76927E2EC5660100B15B87 /* Build configuration list for PBXNativeTarget "Prueba_MarioGR" */;
+			buildPhases = (
+				9D7692512EC565FE00B15B87 /* Sources */,
+				9D7692522EC565FE00B15B87 /* Frameworks */,
+				9D7692532EC565FE00B15B87 /* Resources */,
+				9D7696092EC7F26D00B15B87 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9D7692572EC565FE00B15B87 /* Prueba_MarioGR */,
+			);
+			name = Prueba_MarioGR;
+			productName = Prueba_MarioGR;
+			productReference = 9D7692552EC565FE00B15B87 /* Prueba_MarioGR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D7692692EC5660000B15B87 /* Prueba_MarioGRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7692812EC5660100B15B87 /* Build configuration list for PBXNativeTarget "Prueba_MarioGRTests" */;
+			buildPhases = (
+				9D7692662EC5660000B15B87 /* Sources */,
+				9D7692672EC5660000B15B87 /* Frameworks */,
+				9D7692682EC5660000B15B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D76926C2EC5660000B15B87 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D76926D2EC5660000B15B87 /* Prueba_MarioGRTests */,
+			);
+			name = Prueba_MarioGRTests;
+			productName = Prueba_MarioGRTests;
+			productReference = 9D76926A2EC5660000B15B87 /* Prueba_MarioGRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D7692732EC5660100B15B87 /* Prueba_MarioGRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7692842EC5660100B15B87 /* Build configuration list for PBXNativeTarget "Prueba_MarioGRUITests" */;
+			buildPhases = (
+				9D7692702EC5660100B15B87 /* Sources */,
+				9D7692712EC5660100B15B87 /* Frameworks */,
+				9D7692722EC5660100B15B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D7692762EC5660100B15B87 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D7692772EC5660100B15B87 /* Prueba_MarioGRUITests */,
+			);
+			name = Prueba_MarioGRUITests;
+			productName = Prueba_MarioGRUITests;
+			productReference = 9D7692742EC5660100B15B87 /* Prueba_MarioGRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D76924D2EC565FE00B15B87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9D7692542EC565FE00B15B87 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9D7692692EC5660000B15B87 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9D7692542EC565FE00B15B87;
+					};
+					9D7692732EC5660100B15B87 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9D7692542EC565FE00B15B87;
+					};
+				};
+			};
+			buildConfigurationList = 9D7692502EC565FE00B15B87 /* Build configuration list for PBXProject "Prueba_MarioGR" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D76924C2EC565FE00B15B87;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9D7695302EC7D21600B15B87 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9D7692562EC565FE00B15B87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D7692542EC565FE00B15B87 /* Prueba_MarioGR */,
+				9D7692692EC5660000B15B87 /* Prueba_MarioGRTests */,
+				9D7692732EC5660100B15B87 /* Prueba_MarioGRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D7692532EC565FE00B15B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7692682EC5660000B15B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7692722EC5660100B15B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D7696092EC7F26D00B15B87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -e \"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/SwiftFormat/CommandLineTool/swiftformat\" ]; then\n  \"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/SwiftFormat/CommandLineTool/swiftformat\" .\nelse\n  echo \"warning: SwiftFormat no encontrado\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D7692512EC565FE00B15B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7692662EC5660000B15B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7692702EC5660100B15B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D76926C2EC5660000B15B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D7692542EC565FE00B15B87 /* Prueba_MarioGR */;
+			targetProxy = 9D76926B2EC5660000B15B87 /* PBXContainerItemProxy */;
+		};
+		9D7692762EC5660100B15B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D7692542EC565FE00B15B87 /* Prueba_MarioGR */;
+			targetProxy = 9D7692752EC5660100B15B87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D76927C2EC5660100B15B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D76927D2EC5660100B15B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D76927F2EC5660100B15B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prueba_MarioGR/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prueba_MarioGR/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Prueba-MarioGR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D7692802EC5660100B15B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prueba_MarioGR/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prueba_MarioGR/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Prueba-MarioGR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D7692822EC5660100B15B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Prueba-MarioGRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba_MarioGR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prueba_MarioGR";
+			};
+			name = Debug;
+		};
+		9D7692832EC5660100B15B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Prueba-MarioGRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba_MarioGR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prueba_MarioGR";
+			};
+			name = Release;
+		};
+		9D7692852EC5660100B15B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Prueba-MarioGRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prueba_MarioGR;
+			};
+			name = Debug;
+		};
+		9D7692862EC5660100B15B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prueba.Prueba-MarioGRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prueba_MarioGR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D7692502EC565FE00B15B87 /* Build configuration list for PBXProject "Prueba_MarioGR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D76927C2EC5660100B15B87 /* Debug */,
+				9D76927D2EC5660100B15B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D76927E2EC5660100B15B87 /* Build configuration list for PBXNativeTarget "Prueba_MarioGR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D76927F2EC5660100B15B87 /* Debug */,
+				9D7692802EC5660100B15B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7692812EC5660100B15B87 /* Build configuration list for PBXNativeTarget "Prueba_MarioGRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7692822EC5660100B15B87 /* Debug */,
+				9D7692832EC5660100B15B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7692842EC5660100B15B87 /* Build configuration list for PBXNativeTarget "Prueba_MarioGRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7692852EC5660100B15B87 /* Debug */,
+				9D7692862EC5660100B15B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D7693F12EC57F2F00B15B87 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+		9D7695302EC7D21600B15B87 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D7693F22EC57F2F00B15B87 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D7693F12EC57F2F00B15B87 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		9D7695312EC7D21600B15B87 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D7695302EC7D21600B15B87 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		9D7695332EC7D22400B15B87 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D7695302EC7D21600B15B87 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9D76924D2EC565FE00B15B87 /* Project object */;
+}
