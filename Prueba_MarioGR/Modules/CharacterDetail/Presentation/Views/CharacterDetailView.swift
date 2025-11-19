@@ -11,6 +11,13 @@ import MapKit
 struct CharacterDetailView: View {
     @StateObject private var viewModel: CharacterDetailViewModel
     let characterId: Int
+    @State private var showInfo = false
+    @State private var selectedCoordinate: CLLocationCoordinate2D? = nil
+    
+    private let pinDownOffset: CGFloat = 40
+    private let labelUpOffset: CGFloat = -10
+    private let labelOpacityVisible: Double = 1.0
+    private let labelOpacityHidden: Double = 0.0
     
     init(characterId: Int, viewModel: CharacterDetailViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
@@ -70,19 +77,58 @@ struct CharacterDetailView: View {
                             }
                             
                             if viewModel.showLocation, let coordinate = viewModel.coordinate {
-                                let pin = MapPin(coordinate: coordinate)
-                                
-                                Map(coordinateRegion: .constant(
-                                    MKCoordinateRegion(
-                                        center: coordinate,
-                                        span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
-                                    )
-                                ), annotationItems: [pin]) { coord in
-                                    MapMarker(coordinate: coord.coordinate, tint: .red)
+                                ZStack {
+                                    Map(
+                                        coordinateRegion: .constant(
+                                            MKCoordinateRegion(
+                                                center: coordinate,
+                                                span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
+                                            )
+                                        ),
+                                        annotationItems: [PinItem(coordinate: coordinate)]
+                                    ) { item in
+                                        MapAnnotation(coordinate: item.coordinate) {
+                                            ZStack {
+                                                VStack(spacing: 4) {
+                                                    Text("Última ubicación").bold().font(.caption)
+                                                    Text("Lat: \(item.coordinate.latitude, specifier: "%.4f")").font(.caption2)
+                                                    Text("Lng: \(item.coordinate.longitude, specifier: "%.4f")").font(.caption2)
+                                                }
+                                                .padding(8)
+                                                .background(Color.white)
+                                                .cornerRadius(8)
+                                                .shadow(radius: 4)
+                                                .offset(y: showInfo ? labelUpOffset : (labelUpOffset - 30))
+                                                .opacity(showInfo ? labelOpacityVisible : labelOpacityHidden)
+                                                .animation(.spring(), value: showInfo)
+                                                
+                                                Image(systemName: "mappin.circle.fill")
+                                                    .font(.title)
+                                                    .foregroundColor(.red)
+                                                    .offset(y: showInfo ? pinDownOffset : 0)
+                                                    .onTapGesture {
+                                                        withAnimation(.spring()) {
+                                                            selectedCoordinate = item.coordinate
+                                                            showInfo.toggle()
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                    }
+                                    .frame(height: 200)
+                                    .cornerRadius(12)
+                                    .padding(.horizontal)
+                                    
+                                    if showInfo {
+                                        Color.black.opacity(0.001)
+                                            .ignoresSafeArea()
+                                            .onTapGesture {
+                                                withAnimation(.spring()) {
+                                                    showInfo = false
+                                                }
+                                            }
+                                    }
                                 }
-                                .frame(height: 200)
-                                .cornerRadius(12)
-                                .padding(.horizontal)
                             }
                             
                             VStack(alignment: .leading, spacing: 10) {
